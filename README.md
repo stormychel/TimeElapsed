@@ -49,3 +49,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contributing
 
 Contributions are welcome in the shape of Pull Requests.
+
+## Contact
+
+https://www.michelstorms.com
