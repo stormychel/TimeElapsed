@@ -4,7 +4,7 @@
 import Foundation
 
 /// A simple object that starts a timer on init . On deinit it reports the time between the two. Also has  .lap function and .stop function.
-class TimeElapsed {
+public class TimeElapsed {
     var start: DispatchTime
     var name: String
     
