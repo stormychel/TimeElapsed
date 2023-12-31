@@ -13,12 +13,12 @@ public class TimeElapsed {
         self.name = name
     }
     
-    var seconds: Double {
+    public var seconds: Double {
         let elapsed = start.distance(to: .now())
         return elapsed.toSeconds() ?? 0
     }
     
-    func tell(comment: String = "", indent: Bool = false) {
+    public func tell(comment: String = "", indent: Bool = false) {
         print(
             (indent ? "\t" : "")
             +
@@ -28,7 +28,7 @@ public class TimeElapsed {
         )
     }
     
-    func restart() {
+    public func restart() {
         start = .now()
     }
 }
