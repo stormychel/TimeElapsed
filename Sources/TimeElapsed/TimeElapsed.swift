@@ -8,7 +8,7 @@ public class TimeElapsed {
     var start: DispatchTime
     var name: String
     
-    init(name: String) {
+    public init(name: String) {
         start = .now()
         self.name = name
     }
