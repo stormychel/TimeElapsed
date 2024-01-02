@@ -1,12 +1,16 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+//
+//  TimeElapsed.swift
+//  TimeElapsed
+//
+//  Created by Michel Storms
+//
 
 import Foundation
 
 /// A simple object that starts a timer on init . On deinit it reports the time between the two. Also has  .lap function and .stop function.
 public class TimeElapsed {
     var start: DispatchTime
-    var name: String
+    public var name: String
     
     public init(name: String) {
         start = .now()
