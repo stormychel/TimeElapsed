@@ -1,8 +1,8 @@
 //
-//  File.swift
-//  
+//  SwiftExtensions.swift
+//  TimeElapsed
 //
-//  Created by Michel Storms on 31/12/2023.
+//  Created by Michel Storms
 //
 
 import Foundation
