@@ -23,8 +23,8 @@ public class TimeElapsed {
     }
     
     public var milliseconds: Double {
-        let elapsed = Double(start.distance(to: .now())) // nanoseconds
-        return elapsed / 1_000_000.0 // convert to ms directly
+        let elapsed = start.distance(to: .now()) // UInt64 nanoseconds
+        return Double(elapsed) / 1_000_000.0
     }
     
     public func tell(comment: String = "", indent: Bool = false) {
