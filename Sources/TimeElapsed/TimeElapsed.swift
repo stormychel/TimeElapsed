@@ -22,6 +22,10 @@ public class TimeElapsed {
         return elapsed.toSeconds() ?? 0
     }
     
+    public var milliseconds: Double {
+        (seconds * 1000.0).rounded()
+    }
+    
     public func tell(comment: String = "", indent: Bool = false) {
         print(
             (indent ? "\t" : "")
