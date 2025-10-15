@@ -23,7 +23,7 @@ public class TimeElapsed {
     }
     
     public var milliseconds: Double {
-        let elapsed = start.distance(to: .now()) // UInt64 nanoseconds
+        let elapsed = DispatchTime.now().uptimeNanoseconds - start.uptimeNanoseconds
         return Double(elapsed) / 1_000_000.0
     }
     
